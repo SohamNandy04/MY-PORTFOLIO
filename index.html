@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <span class="purple">SOHAM NANDY</span>
+            </div>
+            <div class="right">
+                <nav>
+                    <ul>
+                        <li><a href = "#HOME">HOME</li></a>
+                        <li><a href = "#EDUCATION">EDUCATION</li></a>
+                        <li><a href = "#SKILLS">SKILLS</li></a>
+                        <li><a href = "#PROJECTS">PROJECTS</li></a>
+                        <li><a href = "#CONTACT ME">CONTACT ME</li></a>
+                    </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="first" id="HOME">
+            <div class="leftSection">
+                <img src = "assests/mypic1.jpeg" alt = "SOHAM NANDY">
+            </div>
+            <div class="rightSection">
+                Hi! I am <span class="blue">Soham</span>
+                <div>and I am a keen</div>
+                <span id="element"></span> <!-- Element to contain animated typing -->
+
+                <div> 
+                    <a href = "https://drive.google.com/file/d/1TErbE514fArcJPXYuksYHPdcKJVJK1t3/view?usp=drive_link" download = "SohamNandy_Resume" target = "_blank" class = "button" >Resume</a>
+                    <a href="#CONTACT ME" class = "button">Contact Me</a>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="second" id="EDUCATION">
+            <h1>Education</h1>
+        </section>
+
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> <!-- Load library from the CDN -->
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+        strings: ['...','Programmer' , ' and a Web Developer'],
+        typeSpeed: 45,
+        });
+    </script>
+
+</body>
+</html>
